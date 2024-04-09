@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+#navBar{
+    background-color: #bee9e4;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#title{
+    padding-top: 1%;
+    padding-left: 2%;
+    color: #055b50;
+}
+
+#PagsNavBar{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+   
+}
+#PagsNavBar li{
+    
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+#PagsNavBar a{
+    text-decoration: none;
+    color: #055b50;
+}
+
+#PagsNavBar button{
+    background-color: #055b50;
+    color: white;
+    height: 50px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 25px 25px 25px 25px;
+}
+
+#text{
+    height: 40%;
+    width: 40%;
+    font-size:x-large;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#servicos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    Align-items:center;
+    padding-top: 5%;
+    flex-direction: column;
+    
+}
+
+
+.BlueBox{
+    margin: 5%;
+    width: 80%;
+    height: 350px;
+    background-color: #bee9e4;
+    border-radius: 0% 200px 200px 0%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.BlueBox *{
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+.BlueBox p{
+    font-size:xx-large;
+    color: #686f6f;
+}
+
+.BlueBox button{
+    background-color: #055b50;
+    color: white;
+    height: 50px;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 25px 25px 25px 25px;
+    font-size: x-large;
+}
+
+#sobreNos{
+    margin: 5%;
+    width: 60%;
+    height: 350px;
+    background-color: #edf6ff;
+    border-radius: 200px 200px 200px 200px;
+    display: flex;
+    
+}
+
+#boxWhite{
+    border-radius: 200px 0px 0px 200px;
+    background-color: white;
+    height: 70%;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#sobreNos p{
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size:x-large;
+}
