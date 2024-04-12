@@ -16,9 +16,13 @@ use App\Http\Controllers\registerController;
 |
 */
 
-Route::get('/', [DashboardController::class, 'index']);
+Route::get('/', [DashboardController::class, 'index'])->name('index');
+Route::get('/homePage', [DashboardController::class, 'HomePage'])->name('HomePage');
+
+
 
 Route::get('/login', [loginControler ::class, 'index'])->name('login.index');
+Route::post('/login', [loginControler ::class, 'authenticate'])->name('login.authenticate');
 
 Route::get('/register', [registerController ::class, 'index'])->name('register.index');
 Route::post('/register', [registerController ::class, 'store'])->name('register.store');

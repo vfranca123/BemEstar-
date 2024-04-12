@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/cd911c24bf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/login.css">
-
-    
-    <title>Bem Estar </title>
+    <title>Document</title>
 </head>
 <body>
-    @include('layout.nav')
-
-    <div >
-        @yield('content')
-    </div>
-
+    @if(session()->has('flash'))
+        <div id="flash" style="  padding-left:5px;color:black;background-color:#ff0000">
+            <h1>{{session('flash')}}</h1>
+        </div>
+    @endif    
 </body>
 </html>

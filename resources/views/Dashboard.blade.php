@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/app.css">
-    <title>Bem Estar </title>
-</head>
-<body>
+@extends('layout.layout')
 
-    @include('nav')
-    
+@section('content')
+
+@include('shared.flash ')
+
+
     <div id="text">
         <p>Bem-estar é mais do que um site: é o seu guia para uma 
             vida plena. Aqui, você pode monitorar sua rotina de sono, 
@@ -61,5 +55,4 @@
             </p>
         </div>
     </div>
-</body>
-</html>
+@endsection

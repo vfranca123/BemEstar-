@@ -17,6 +17,8 @@
     padding-top: 1%;
     padding-left: 2%;
     color: #055b50;
+    text-decoration: none;
+    font-size: 350%;
 }
 
 #PagsNavBar{
@@ -39,6 +41,7 @@
 
 #PagsNavBar a{
     text-decoration: none;
+    
     color: #055b50;
 }
 
@@ -57,6 +60,8 @@
     font-size:x-large;
     padding-top: 5%;
     padding-left: 5%;
+    text-decoration: none;
+
 }
 
 #servicos{
@@ -125,4 +130,50 @@
     margin-left: 5%;
     margin-top: 5%;
     font-size:x-large;
+}
+#flash{
+     width: 30%;
+     height: 100px;
+     background-color:cornflowerblue;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 35%;
+     border-radius: 5px;
+     color: white;
+
+}
+
+#opcoes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    
+ 
+}
+
+.op{
+    width:20%;
+    height: 300px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.op h1{
+    color: #055b50;
+    align-self: center;
+
+}
+
+.cinza{
+    background-color: #c3c3c3;
+    width: 100%;
+    height: 90%;
+    border-radius:  10px 10px 0px 0px;
+    font-size: 150px;
+    display: flex;
+    justify-content: center; 
 }
