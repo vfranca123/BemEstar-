@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\loginControler;
 use App\Http\Controllers\registerController;
+use App\Http\Controllers\loginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +24,12 @@ Route::get('/homePage', [DashboardController::class, 'HomePage'])->name('HomePag
 
 Route::get('/login', [loginControler ::class, 'index'])->name('login.index');
 Route::post('/login', [loginControler ::class, 'authenticate'])->name('login.authenticate');
+Route::get('/logout', [loginControler ::class, 'logout'])->name('logout');
 
 Route::get('/register', [registerController ::class, 'index'])->name('register.index');
 Route::post('/register', [registerController ::class, 'store'])->name('register.store');
+
+Route::get('/sono', [loginController::class, 'index'])->name('sono.index');
 
 
 //Route::get('/register',[AuthController::class, 'register'])->name('register');

@@ -6,13 +6,13 @@
     <form id="bigBox" action="{{route('login.authenticate')}}" method="post">
         @csrf
         <div id="littleBox">
-            <p>endereço de email</p>
-            <input type="email" name="email" id="email">
+            <p>email:</p>
+            <input type="email" name="email" id="email" placeholder="XXXXXXX@yyyyyyy" >
             <hr>
-            <p>senha</p>
-            <input type="password" name="password" id="password">
+            <p>senha:</p>
+            <input type="password" name="password" id="password"  placeholder="******">
             
-            <input type="submit" id="blackBox" style="font-size: x-large" value="entrar "> 
+            <input type="submit" id="blackBox" style="font-size: x-large;" value="entrar "> 
         </div>
     </form>
 @endsection

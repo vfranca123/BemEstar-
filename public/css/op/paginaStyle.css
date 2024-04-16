@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+#display{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#grayBox{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 800px;
+    height: 600px;
+    background-color: #e6e6e6;
+    border-radius: 5%;
+    box-shadow: 15px 15px 5px #a6c4c1;
+
+}
+#grayBox p{
+   margin-left: 5%;
+   margin-top: 5%;
+}
+
+#grayBox input{
+    margin: 2%;
+    height: 10%;
+    width: 50%;
+    border-radius: 10px;
+    border: 0px;
+   
+}
+
+#OpButton{
+    font-size: x-large;
+    cursor: pointer;
+    background-color: #055b50;
+    color: #ffffff; 
+    align-self: center;
+}
