@@ -1,15 +1,16 @@
 @extends('layout.layout')
 @section('content')
+    @include('shared.flash ')
     <div id="display"> 
         <h1>alimentação</h1>
         
-            <form action="" method="POST" id="grayBox">
+            <form action="{{route('user.refeicao.store',auth()->id())}}" method="POST" id="grayBox">
                 @csrf
-                @method('put')
+                
                 <p>Descrição:</p>
-                <input type="text" name="text" >
+                <input type="text" name="text" placeholder="alimentos" >
                 <p>Data:</p>
-                <input type="data" name="text" id="data" value="dd/mm/yyyy">
+                <input type="data" name="data" id="data" placeholder="dd/mm/yyyy">
                 
                 <p>Inserir a imagem:</p>
                 <input type="file" name="image">

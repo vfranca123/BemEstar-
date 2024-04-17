@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\loginControler;
 use App\Http\Controllers\registerController;
-use App\Http\Controllers\loginController;
+use App\Http\Controllers\RefeicaoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +29,8 @@ Route::get('/logout', [loginControler ::class, 'logout'])->name('logout');
 Route::get('/register', [registerController ::class, 'index'])->name('register.index');
 Route::post('/register', [registerController ::class, 'store'])->name('register.store');
 
-Route::get('/sono', [loginController::class, 'index'])->name('sono.index');
+Route::get('/refeicao', [RefeicaoController::class, 'index'])->name('refeicao.index');
+Route::post('/refeicao/{user}/refeicao', [ RefeicaoController::class, 'store'])->name('user.refeicao.store');
 
 
 //Route::get('/register',[AuthController::class, 'register'])->name('register');
