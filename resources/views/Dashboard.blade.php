@@ -3,7 +3,7 @@
 @section('content')
 
 @include('shared.flash ')
-
+@include('shared.flashError ')
 
     <div id="text">
         <p>Bem-estar é mais do que um site: é o seu guia para uma 

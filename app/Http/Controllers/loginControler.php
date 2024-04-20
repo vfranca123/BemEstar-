@@ -36,6 +36,6 @@ class loginControler extends Controller
         request()->session()->invalidate(); // invalida os dados anteriores apra segurança
         request()->session()->regenerate(); // limpa a cache
     
-    return redirect()->route('index',['controle'=>1])->with('flash','logout completo');
+    return redirect()->route('index',['controle'=>1])->with('flashError','logout completo');
     }
 }

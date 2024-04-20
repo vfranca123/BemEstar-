@@ -30,7 +30,9 @@ Route::get('/register', [registerController ::class, 'index'])->name('register.i
 Route::post('/register', [registerController ::class, 'store'])->name('register.store');
 
 Route::get('/refeicao', [RefeicaoController::class, 'index'])->name('refeicao.index');
-Route::post('/refeicao/{user}/refeicao', [ RefeicaoController::class, 'store'])->name('user.refeicao.store');
+Route::post('/user/{user}/refeicao', [ RefeicaoController::class, 'store'])->name('user.refeicao.store');
+Route::get('/refeicaos/{user}', [RefeicaoController::class, 'show'])->name('refeicao.show');
+
 
 
 //Route::get('/register',[AuthController::class, 'register'])->name('register');

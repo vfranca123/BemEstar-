@@ -14,4 +14,6 @@ class refeicao extends Model
         'data'
     ];
     use HasFactory;
+
+    
 }

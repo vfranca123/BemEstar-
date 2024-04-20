@@ -9,9 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-    @if(session()->has('flash'))
-        <div id="flash" style="  padding-left:5px;color:black;background-color:#ff0000">
-            <h1>{{session('flash')}}</h1>
+    @if(session()->has('flashError'))
+        <div id="flash" style="  padding-left:5px; color: white;;background-color:#ff0000">
+            <h1>{{session('flashError')}}</h1>
         </div>
     @endif    
 </body>

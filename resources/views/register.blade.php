@@ -3,8 +3,9 @@
 @section('content')
 
     <div id="bigBox">
-        <form id="littleBox" action="{{ route('register.store') }}" method="POST">
+        <form enctype="multipart/form-data" id="littleBox" action="{{ route('register.store') }}" method="POST">
             @csrf
+            
             <p>Nome</p>
             <input type="text" name="nome" id="nome" placeholder="Gerivaldo">
             <hr>
