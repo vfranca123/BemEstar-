@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\loginControler;
 use App\Http\Controllers\registerController;
 use App\Http\Controllers\RefeicaoController;
+use App\Http\Controllers\atividadeFisicaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,8 @@ Route::get('/refeicao', [RefeicaoController::class, 'index'])->name('refeicao.in
 Route::post('/user/{user}/refeicao', [ RefeicaoController::class, 'store'])->name('user.refeicao.store');
 Route::get('/refeicaos/{user}', [RefeicaoController::class, 'show'])->name('refeicao.show');
 
-
+Route::get('/atividadeFisica', [atividadeFisicaController::class, 'index'])->name('atividadeFisica.index');
+Route::post('/user/{user}/atividadeFisica',[atividadeFisicaController::class, 'store'])->name('user.atividadeFisica.store');
+Route::get('/atividadeFisica/{user}', [atividadeFisicaController::class, 'show'])->name('atividadeFisica.show');
 
 //Route::get('/register',[AuthController::class, 'register'])->name('register');

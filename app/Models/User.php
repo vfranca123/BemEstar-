@@ -46,4 +46,8 @@ class User extends Authenticatable
     public function refeicaos(){
         return $this->hasMany( refeicao::class,'user_id','id');
     }
+
+    public function atividade_fisicas(){
+        return $this->hasMany( atividadeFisica::class,'user_id','id');
+    }
 }

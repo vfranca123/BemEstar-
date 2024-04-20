@@ -59,3 +59,25 @@
     font-size: 25px;
     
 }
+
+.fileira{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    width: 80%;
+    height: 5%;
+    color: #ffff;
+    justify-content: space-evenly;
+}
+
+
+.demarcacoes{
+    margin: 2%;
+    width: 80%;
+    height: 5%;
+    background-color: #d8d8d8;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+   
+}

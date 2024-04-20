@@ -13,7 +13,7 @@
         </div>
 
         <div class="op">
-            <div class="cinza"><a  href="#" class="fa-solid fa-bicycle" style="margin-top: 10%"></a></div>
+            <div class="cinza"><a  href="{{route('atividadeFisica.index')}}" class="fa-solid fa-bicycle" style="margin-top: 10%"></a></div>
             <h1>Atividade fisica</h1>
         </div>
     </div>

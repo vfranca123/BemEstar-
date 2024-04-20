@@ -14,7 +14,7 @@
                 <p>Inserir a imagem:</p>
                 <input type="file" name="image">
 
-                <input type="submit"  id="OpButton" value="enviar">
+                <input type="submit"  id="OpButton" value="enviar" >
             
             </form>
         
