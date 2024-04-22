@@ -8,10 +8,10 @@
             <form enctype="multipart/form-data" action="{{route('user.refeicao.store',auth()->id())}}" method="POST" id="grayBox">
                 @csrf
                 
-                <p>Descrição:</p>
+                <h3>Descrição:</h3>
                 <input type="text" name="text" placeholder="alimentos" >
                                 
-                <p>Inserir a imagem:</p>
+                <h3>Inserir a imagem:</h3>
                 <input type="file" name="image">
 
                 <input type="submit"  id="OpButton" value="enviar" >

@@ -5,14 +5,25 @@
 
     <form id="bigBox" action="{{route('login.authenticate')}}" method="post">
         @csrf
-        <div id="littleBox">
-            <p>email:</p>
-            <input type="email" name="email" id="email" placeholder="XXXXXXX@yyyyyyy" >
-            <hr>
-            <p>senha:</p>
-            <input type="password" name="password" id="password"  placeholder="******">
+        <div id="littleBox" style="height: 35%;">
+           
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control"  name="email" >
+                </div>
+              </div>
             
-            <input type="submit" id="blackBox" style="font-size: x-large;" value="entrar "> 
+              <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control"  name="password" placeholder="******">
+                </div>
+              </div>
+            
+            <input type="submit" id="blackBox" style="font-size: x-large;height: 30%;" value="entrar "> 
         </div>
     </form>
 @endsection
+
+

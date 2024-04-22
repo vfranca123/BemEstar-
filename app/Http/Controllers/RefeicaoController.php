@@ -25,7 +25,8 @@ class RefeicaoController extends Controller
     public function store(User $user, Request $request) {
     $validated = $request->validate([
         'text' => 'required',
-        'image' => 'image', // Validação para garantir que seja um arquivo de imagem
+        'image' => 'image', 
+        
     ]);
 
     if ($request->hasFile('image')) {

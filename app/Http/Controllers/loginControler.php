@@ -12,7 +12,8 @@ class loginControler extends Controller
     }
 
     public function authenticate(){
-         
+        
+        
         $validet = request()->validate([
         
             'email'=>'required|email',
@@ -20,7 +21,8 @@ class loginControler extends Controller
         
         ]);
        
-
+       
+        
         if(auth()->attempt($validet)){
             
             request()->session()->regenerate();
@@ -28,6 +30,7 @@ class loginControler extends Controller
         }
         
         return redirect()->route('login.index')->with( 'flash','email ou senha incorreto');
+        
     }
 
     public function logout(){

@@ -8,16 +8,16 @@
             <form  action="{{route('user.atividadeFisica.store',auth()->id())}}" method="POST" id="grayBox">
                 @csrf
                 
-                <p>Nome:</p>
+                <h3>Nome:</h3>
                 <input type="text" name="nome" placeholder="nome" >
                                 
-                <p>Inicio:</p>
+                <h3>Inicio:</h3>
                 <input  type="text" name="inicio" placeholder="dd/mm/yy">
 
-                <p>Fim:</p>
+                <h3>Fim:</h3>
                 <input  type="text" name="Fim" placeholder="dd/mm/yy">
 
-                <p>Descrição:</p>
+                <h3>Descrição:</h3>
                 <input type="text" name='descricao'> 
                  
                 <input type="submit"  id="OpButton" value="enviar">

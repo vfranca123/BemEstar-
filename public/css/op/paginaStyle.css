@@ -21,7 +21,7 @@
     box-shadow: 15px 15px 5px #a6c4c1;
 
 }
-#grayBox p{
+#grayBox h3{
    margin-left: 5%;
    margin-top: 5%;
 }
@@ -36,10 +36,27 @@
 }
 
 #OpButton{
+    
     font-size: x-large;
     cursor: pointer;
     background-color: #055b50;
     color: #ffffff; 
     align-self: center;
+    
 }
+
+#avaliacao{
+    margin: 1%;
+    height: 10%;
+    width: 100%;
+    border-radius: 10px;
+    border: 0px;
+}
+
+
+
+
+
+
+
 

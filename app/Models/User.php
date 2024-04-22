@@ -21,7 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'data'
+        'data_coluna'
     ];
 
     /**
@@ -43,11 +43,21 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    
+
     public function refeicaos(){
         return $this->hasMany( refeicao::class,'user_id','id');
     }
 
     public function atividade_fisicas(){
         return $this->hasMany( atividadeFisica::class,'user_id','id');
+    }
+
+    public function sonos(){
+        return $this->hasMany( sono::class,'user_id','id');
+    }
+
+    public function ftPerfil(){
+        return $this->hasMany( ftPerfil::class,'user_id','id');
     }
 }

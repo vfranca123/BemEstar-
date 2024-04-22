@@ -15,11 +15,11 @@
             @auth()
                 <a href="{{route('HomePage')}}"id="title"> Bem Estar</a>
                 <ul id="PagsNavBar">
-                    <li > <a href="#">Sono</a></li>
+                    <li > <a href="{{route('sono.show',auth()->id())}}">Sono</a></li>
                     <li ><a href="{{route('refeicao.show',auth()->id())}}">alimentação</a></li>
                     <li ><a href="{{route('atividadeFisica.show',auth()->id())}}">Atividade Fisica</a></li>
                     <li ><a href="{{ route('logout') }}" style="color: red">Sair</a></li>
-                    <li> <a href="#"class="fa-solid fa-user" style="font-size: 50px"> </a> </li>
+                    <li> <a href="{{route('userShow.index',auth()->id())}}"class="fa-solid fa-user" style="font-size: 50px"> </a> </li>
                 </ul>
             @endauth
 
