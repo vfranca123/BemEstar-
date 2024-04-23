@@ -22,7 +22,7 @@
                 sollicitudin et. Nulla aliquet integer hac ac <br>
                 morbi. <br></p>
             
-            <button>Saiba mais<i class="fa-solid fa-arrow-right"></i></button>
+            <a href="{{route('sonoInfo')}}">Saiba mais<i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="BlueBox">
             <h1>Moderador de Atividades Físicas </h1>
@@ -31,7 +31,7 @@
                 sollicitudin et. Nulla aliquet integer hac ac <br>
                 morbi. <br></p>
             
-            <button>Saiba mais<i class="fa-solid fa-arrow-right"></i></button>
+            <a href="{{route('AtividadeFisicaInfo')}}">Saiba mais<i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="BlueBox">
             <h1>Moderador de Humor </h1>
@@ -39,7 +39,7 @@
                     adipiscing elit. Consequat bibendum sit felis,<br> 
                     sollicitudin et. Nulla aliquet integer hac ac <br>
                     morbi. <br></p>
-                <button>Saiba mais<i class="fa-solid fa-arrow-right"></i></button>
+                <a href="{{route('HumorInfo')}}">Saiba mais<i class="fa-solid fa-arrow-right"></i></a>
                 
         </div>
 

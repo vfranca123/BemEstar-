@@ -5,10 +5,13 @@
     <div style="width: 40%;margin:10%">
         
         <div class="mb-3 d-flex ">
+        @if($user->ftPerfil)
             <img src="{{$user->getImageURL()}}" style="width:100px ; border-radius: 5px;" alt="ft de perfil">
+        @endif    
             <h1>{{$user->name}}</h1>
         </div>
         
+
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address:</label>
             <label class="form-control bg-body-secondary " id="exampleInputEmail1" aria-describedby="emailHelp">{{$user->email}}</label>

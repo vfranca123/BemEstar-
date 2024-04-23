@@ -21,8 +21,9 @@ use App\Http\Controllers\SonoController;
 
 Route::get('/', [DashboardController::class, 'index'])->name('index');
 Route::get('/homePage', [DashboardController::class, 'HomePage'])->name('HomePage');
-
-
+Route::get('/sonoInfo', [DashboardController::class, 'ModeradorDeSono'])->name('sonoInfo');
+Route::get('/AtividadeFisicaInfo', [DashboardController::class, 'ModeradorDeAtividadesFísicas'])->name('AtividadeFisicaInfo');
+Route::get('/humorInfo', [DashboardController::class, 'ModeradordeHumor'])->name('HumorInfo');
 
 Route::get('/login', [loginControler ::class, 'index'])->name('login.index');
 Route::post('/login/authenticate', [loginControler ::class, 'authenticate'])->name('login.authenticate');

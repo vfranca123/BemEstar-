@@ -15,4 +15,17 @@ class DashboardController extends Controller
     public function HomePage(){
         return view('HomePage',['controle'=>2]);
     }
+
+    public function ModeradorDeSono(){
+        return view('shared.info',['controle'=>1]);
+    }
+
+    public function ModeradorDeAtividadesFísicas(){
+        return view('shared.info',['controle'=>2]);
+    }
+
+    public function ModeradordeHumor(){
+        return view('shared.info',['controle'=>3]);
+    }
+
 }
