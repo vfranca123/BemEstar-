@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
-use GuzzleHttp\Psr7\Request as Psr7Request;
+use App\Models\ftPerfil;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 
@@ -43,21 +44,39 @@ class registerController extends Controller
 
         return view('user.user-editing',compact('user'));
     }
-    public function update(User $user,Request $request){
-        
-        
-        $validated = $request->all();
-        dump($validated);
-        
-        /*
-        if ($request->hasFile('image')) {
-       
-            $imagePass = request()->file('image')->store('FotosPerfil','public'); 
-            $valideted['image']=  $imagePass ;
+
+    public function update(User $user, Request $request)
+{
+        $validated = $request->validate([
+            'name' => 'required',
+            'senha' => 'required'
+        ]);
+
+        // Verificar se uma imagem foi enviada no request
+        if ($request->hasFile('imag')) {
+            // Armazenar a nova imagem
+            $imagePath = request()->file('imag')->store('FotosPerfil', 'public');
+
+            // Verificar se o usuário tem uma imagem associada
+            if ($user->ftPerfil) {
+                // Deletar a imagem anterior e o registro correspondente
+                Storage::disk('public')->delete($user->ftPerfil->img);
+                $user->ftPerfil->delete();
+            }
+
+            // Criar um novo registro de perfil de imagem
+            ftPerfil::create([
+                'user_id' => $user->id,
+                'img' => $imagePath
+            ]);
         }
-        */
 
+        // Atualizar os outros campos do usuário
+        $user->update($validated);
 
-        //$user->update($valideted);
+        return redirect()->route('userShow.index', $user)->with('flash', 'Editado com sucesso');
     }
-}
+
+ }
+    
+

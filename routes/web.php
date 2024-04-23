@@ -45,5 +45,6 @@ Route::post('/user/{user}/sono',[SonoController::class, 'store'])->name('user.so
 Route::get('/sono/{user}', [SonoController::class, 'show'])->name('sono.show');
 
 
-Route::put('/user/{user}', [registerController::class, 'editIndex'])->name('userEdit.index');
+Route::get('/user/{user}', [registerController::class, 'editIndex'])->name('userEdit.index');
 Route::get('/user/{user}/show', [registerController::class, 'userShowIndex'])->name('userShow.index');
+Route::put('/user/{user}/edit', [registerController::class, 'update'])->name('user.update');

@@ -2,19 +2,22 @@
 
 @section('content')
     
-    <form style="width: 40%;margin:10%"  action="#" method="post" enctype="multipart/form-data">
+    <form style="width: 40%;margin:10%"  action="{{route('user.update',$user)}}" method="POST" enctype="multipart/form-data">
         @csrf
+        @method('PUT')
+
+        <div class="input-group mb-3">
+            
+            <input type="file" class="form-control" id="inputGroupFile01" name='imag'>
+            <label class="input-group-text" for="inputGroupFile01">Enviar</label>
+        </div>
 
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nome:</label>
-            <label class="form-control bg-body-secondary " id="exampleInputEmail1" aria-describedby="emailHelp" name='nome'>{{$user->name}}</label>
+            <input type="text" class="form-control bg-body-secondary " id="nome" aria-describedby="emailHelp" name='name' placeholder="{{$user->name}}">
         </div>
 
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email:</label>
-            <input type="email" class="form-control bg-body-secondary" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="{{$user->email}}">
-        <div id="emailHelp" class="form-text"></div>
-        </div>
+        
         
         <div class="mb-3 ">
             <label for="exampleInputPassword1" class="form-label">Senha:</label>

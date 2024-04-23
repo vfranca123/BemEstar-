@@ -9,7 +9,7 @@ class ftPerfil extends Model
 {
     protected $fillable=[
         'user_id',
-        'imag',
+        'img'
     ];
     use HasFactory;
 }

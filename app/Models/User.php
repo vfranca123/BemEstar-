@@ -58,6 +58,18 @@ class User extends Authenticatable
     }
 
     public function ftPerfil(){
-        return $this->hasMany( ftPerfil::class,'user_id','id');
+        return $this->hasOne(ftPerfil::class,'user_id','id');
+             
     }
+
+    public function getImageURL(){
+        if($this->ftPerfil){
+            return asset("storage/{$this->ftPerfil->img}");
+        }
+        else{
+            return 'https://api.dicebear.com/6.x/fun-emoji/svg?seed=Mario';
+        }
+    }
+
+   
 }

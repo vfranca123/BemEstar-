@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ftPerfils', function (Blueprint $table) {
+        Schema::create('ft_perfils', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();  
             $table->string('img')->nullable();

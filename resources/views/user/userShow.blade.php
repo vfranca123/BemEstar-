@@ -1,11 +1,11 @@
 @extends('layout.layout')
 
 @section('content')
-    
+    @include('shared.flash ')
     <div style="width: 40%;margin:10%">
         
-        <div class="mb-3">
-            <img src="#" style="width:300px" alt="ft de perfil">
+        <div class="mb-3 d-flex ">
+            <img src="{{$user->getImageURL()}}" style="width:100px ; border-radius: 5px;" alt="ft de perfil">
             <h1>{{$user->name}}</h1>
         </div>
         
