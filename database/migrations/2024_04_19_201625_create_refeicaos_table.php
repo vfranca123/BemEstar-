@@ -13,13 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('refeicaos', function (Blueprint $table) {
+
+        Schema::create('Refeicaos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();  
             $table->string('conteudo');
-            $table->string('imag')->nullable();
+            $table->string('img')->nullable();
             $table->timestamps();
         });
+    
     }
 
     /**
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('refeicaos');
+        Schema::dropIfExists('Refeicaos');
     }
 };

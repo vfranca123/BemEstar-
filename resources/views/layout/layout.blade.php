@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/op/refeicaoShow.css">
-    <link rel="stylesheet" href="/css/op/paginaStyle.css">
-
-    
-    <title>Bem Estar </title>
+    <link rel="stylesheet" href="/css/op/paginaStyle.css">  
+    <title>Bem Estar</title>
 </head>
-<body>
-    @include('layout.nav')
 
-    <div >
+<body>
+    
+    @include('layout.nav')
+    
+    <div>
         @yield('content')
     </div>
-
+    
 </body>
 </html>

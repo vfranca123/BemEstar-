@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
-use App\Models\ftPerfil;
+use App\Models\FotoPerfil;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
@@ -65,7 +65,7 @@ class registerController extends Controller
             }
 
             // Criar um novo registro de perfil de imagem
-            ftPerfil::create([
+            FotoPerfil::create([
                 'user_id' => $user->id,
                 'img' => $imagePath
             ]);

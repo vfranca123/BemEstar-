@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\refeicao;
+use App\Models\Refeicao;
 use App\Models\User;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
@@ -38,7 +38,7 @@ class RefeicaoController extends Controller
         Refeicao::create([
             'user_id' => $user->id,
             'conteudo' => $validated['text'],
-            'imag' =>  $valideted['image']// Salva apenas o caminho relativo da imagem
+            'img' =>  $valideted['image']// Salva apenas o caminho relativo da imagem
         ]);
 
         return redirect()->route('refeicao.show', $user)->with('flash', 'Refeição registrada');

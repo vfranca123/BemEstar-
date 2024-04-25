@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
-use Illuminate\Support\Facades\Storage;
-use App\Models\atividadeFisica;
+use App\Models\AtividadeFisica;
 
 
 class atividadeFisicaController extends Controller
@@ -24,7 +23,7 @@ class atividadeFisicaController extends Controller
         ]);
 
         if ($validated['Fim'] && $validated['inicio'] && $validated['nome'] && $validated['descricao']){
-            atividadeFisica::create([
+            AtividadeFisica::create([
                 'user_id' => $user->id,
                 'nome' => $validated['nome'],
                 'inicio' =>  $validated['inicio'],

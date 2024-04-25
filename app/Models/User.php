@@ -27,7 +27,7 @@ class User extends Authenticatable
     /**
      * The attributes that should be hidden for serialization.
      *
-     * @var array<int, string>
+     *  @var array<int, string>
      */
     protected $hidden = [
         'password',
@@ -58,7 +58,7 @@ class User extends Authenticatable
     }
 
     public function ftPerfil(){
-        return $this->hasOne(ftPerfil::class,'user_id','id');
+        return $this->hasOne(FotoPerfil::class,'user_id','id');
              
     }
 

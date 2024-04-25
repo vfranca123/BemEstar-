@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class sono extends Model
+class Sono extends Model
 {
+    protected $table ='Sonos';
     protected $fillable=[
         'user_id',
         'inicio',
-        'Fim',
+        'fim',
         'avaliacao'
     ];
     use HasFactory;

@@ -9,7 +9,7 @@
             
             <div class="refeicoes">
                 
-                <img src="{{ url("storage/{$refeicao->imag}") }}" style="width:300px" alt="Imagem da Refeição">
+                <img src="{{ url("storage/{$refeicao->img}") }}" style="width:300px" alt="Imagem da Refeição">
 
                 <p>Conteúdo:{{ $refeicao->conteudo }}</p>
                 <p>Data:{{ $refeicao->created_at }}</p>

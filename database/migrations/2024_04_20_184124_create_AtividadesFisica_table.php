@@ -5,15 +5,10 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+{     
     public function up()
     {
-        Schema::create('atividade_fisicas', function (Blueprint $table) {
+        Schema::create('AtividadesFisica', function (Blueprint $table) {
             
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();  
@@ -32,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('atividade_fisicas');
+        Schema::dropIfExists('AtividadesFisica');
     }
 };

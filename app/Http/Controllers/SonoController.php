@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\sono;
+use App\Models\Sono;
 use Illuminate\Http\Request;
 use App\Models\User;
 
@@ -24,10 +24,10 @@ class SonoController extends Controller
         ]);
         
         if ($validated['fim'] && $validated['inicio'] && $validated['avaliacao'] ){
-            sono::create([
+            Sono::create([
                 'user_id' => $user->id,
                 'inicio' => $validated['inicio'],
-                'Fim' =>  $validated['fim'],
+                'fim' =>  $validated['fim'],
                 'avaliacao'=>$validated['avaliacao']    
             ]);
             return redirect()->route('sono.show', $user)->with('flash', 'Sono registrado ');
