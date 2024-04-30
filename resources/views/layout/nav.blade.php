@@ -1,38 +1,38 @@
-    <div id="navBar">
-                  
-            @auth()
-                <a href="{{route('HomePage')}}"id="title"> Bem Estar</a>
-                <ul id="PagsNavBar">
-                    <li > <a href="{{route('sono.show',auth()->id())}}">Sono</a></li>
-                    <li ><a href="{{route('refeicao.show',auth()->id())}}">alimentação</a></li>
-                    <li ><a href="{{route('atividadeFisica.show',auth()->id())}}">Atividade Fisica</a></li>
-                    <li ><a href="{{ route('logout') }}" style="color: red">Sair</a></li>
-                    <li> <a href="{{route('userShow.index',auth()->id())}}"class="fa-solid fa-user" style="font-size: 50px"> </a> </li>
-                </ul>
-            @endauth
 
-            @guest
+    <nav class="navbar p-4  " style="background-color: #e3f2fd;">
+        @auth()
+            <div class="container-fluid ">
+                <a class="navbar-brand " href="{{ route('HomePage') }}">  <h1 style="color: #055b50;">BemEstar </h1></a>
+               
+                    <a class="nav-link  " href="{{route('sono.show',auth()->id())}}">Sono</a>
+                    <a class="nav-link  " href="{{route('refeicao.show',auth()->id())}}">alimentação</a>
+                    <a class="nav-link  " href="{{route('atividadeFisica.show',auth()->id())}}">Atividade Fisica</a>
+                    <a class="nav-link  " href="{{ route('logout') }}"> <button type="button" class="btn btn-danger" >Sair </button></a>
+                    <a class="nav-link  " href="{{route('userShow.index',auth()->id())}}" > <h1 class="fa-solid fa-user "></h1></a> 
+                
+            </div>
+        @endauth
+
+        @guest
                
                
-                @if ($controle ===1)
-                
-                    <a href="{{route('index')}}"id="title">Bem Estar</a>
-                    <ul id="PagsNavBar">
-                        <li><a href="{{ route('login.index') }}"><button>Entrar</button></a></li>
-                    </ul>
-                    
-                       
-                    @else
-                    <a href="{{route('index')}}"id="title"> Bem Estar</a>
-                    <ul id="PagsNavBar">
-                        <li><a href="{{ route('register.index') }}"><button>Cadastrar</button></a></li>        
-                    </ul>
-                @endif
-                
-            @endguest
+        @if ($controle ===1)
+        
+            <a class="navbar-brand " href="{{route('index')}}"><h1 style="color: #055b50;">BemEstar </h1></a>
+            
+            <a class="nav-link  " href="{{ route('login.index') }}"><button type="button" class="btn btn-primary">Entrar</button></a>       
+        @else
+            
+        <a class="navbar-brand " href="{{route('index')}}"><h1 style="color: #055b50;">BemEstar </h1></a>
+            
+            <a class="nav-link" href="{{ route('register.index') }}"><button type="button" class="btn btn-primary">Cadastrar</button></a>        
+           
+        @endif
+        
+    @endguest
        
-
-       
-    </div>
-
+        
+           
+    </nav>
+    
    

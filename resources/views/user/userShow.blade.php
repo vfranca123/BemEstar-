@@ -2,7 +2,7 @@
 
 @section('content')
     @include('shared.flash ')
-    <div style="width: 40%;margin:10%">
+    <div  class="container-sm col-md-6 mt-3">
         
         <div class="mb-3 d-flex ">
         @if($user->ftPerfil)

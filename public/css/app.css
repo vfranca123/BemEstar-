@@ -4,31 +4,12 @@
     
 }
 
-#text{
-    height: 40%;
-    width: 40%;
-    font-size:x-large;
-    padding-top: 5%;
-    padding-left: 5%;
-    text-decoration: none;
 
-}
 
-#servicos{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    Align-items:center;
-    padding-top: 5%;
-    flex-direction: column;
-    
-}
 
 
 .BlueBox{
-    margin: 5%;
-    width: 80%;
-    height: 350px;
+    
     background-color: #bee9e4;
     border-radius: 0% 200px 200px 0%;
     display: flex;
@@ -59,7 +40,7 @@
     text-decoration: none;
 }
 
-#sobreNos{
+.sobreNos{
     margin: 5%;
     width: 60%;
     height: 350px;
@@ -78,33 +59,13 @@
     margin-top: 5%;
 }
 
-#sobreNos p{
+.sobreNos p{
     margin-left: 5%;
     margin-top: 5%;
     font-size:x-large;
 }
-#flash{
-     width: 30%;
-     text-align: center;
-     height: 100px;
-     background-color:cornflowerblue;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-left: 35%;
-     border-radius: 5px;
-     color: white;
 
-}
 
-#opcoes{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;   
-    
- 
-}
 
 .op{
     width:20%;
@@ -124,7 +85,7 @@
 .cinza{
     background-color: #c3c3c3;
     width: 100%;
-    height: 90%;
+    height: 100%;
     border-radius:  10px 10px 0px 0px;
     font-size: 150px;
     display: flex;

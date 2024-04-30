@@ -2,20 +2,24 @@
 
 @section('content')
 
-@include('shared.flash ')
-@include('shared.flashError ')
+    @include('shared.flash ')
+    @include('shared.flashError ')
 
-    <div id="text">
-        <p>Bem-estar é mais do que um site: é o seu guia para uma 
-            vida plena. Aqui, você pode monitorar sua rotina de sono, 
-            alimentação, atividade física e muito mais, tudo para 
-            alcançar a melhor qualidade de vida possível.</p>
+
+    <div class="container-md mt-5">
+        <pre class="fs-5">
+        Bem-estar é mais do que um site: é o seu guia para uma 
+        vida plena. Aqui, você pode monitorar sua rotina de sono, 
+        alimentação, atividade física e muito mais, tudo para 
+        alcançar a melhor qualidade de vida possível.
+        </pre>
     </div>
 
-    <div id="servicos">
-        <h1>Nossos serviçoes</h1>
+    <div class="container d-flex flex-column justify-content-center">
         
-        <div class="BlueBox">
+        <h1 class="align-self-center">Nossos serviçoes</h1>
+        
+        <div class="container-sm BlueBox m-4" >
             <h1> Moderador de Sono</h1>
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit. Consequat bibendum sit felis,<br> 
@@ -24,7 +28,7 @@
             
             <a href="{{route('sonoInfo')}}">Saiba mais<i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="BlueBox">
+        <div class="container-sm BlueBox m-4">
             <h1>Moderador de Atividades Físicas </h1>
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit. Consequat bibendum sit felis,<br> 
@@ -33,7 +37,7 @@
             
             <a href="{{route('AtividadeFisicaInfo')}}">Saiba mais<i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="BlueBox">
+        <div class="container-sm BlueBox m-4">
             <h1>Moderador de Humor </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur <br>
                     adipiscing elit. Consequat bibendum sit felis,<br> 
@@ -43,8 +47,8 @@
                 
         </div>
 
-        <div id="sobreNos">
-            <div id="boxWhite"> <h1 style="padding: 25%; padding-left:30%;color:#3f74ff">Sobre <br>Nos</h1></div>
+        <div class="container-sm sobreNos" >
+            <div class="container-sm" style="max-width:60%;" id="boxWhite"> <h1 style="padding: 25%; padding-left:30%;color:#3f74ff">Sobre <br>Nos</h1></div>
             <p >Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                 elit. Eget duis mi nunc bibendum. Tellus elementum <br>
                 SOBRE 
@@ -54,5 +58,7 @@
                 accumsan, viverra enim. Mi. <br>
             </p>
         </div>
+
+        
     </div>
 @endsection

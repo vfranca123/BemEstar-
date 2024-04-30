@@ -2,7 +2,7 @@
 
 @section('content')
     
-    <form style="width: 40%;margin:10%"  action="{{route('user.update',$user)}}" method="POST" enctype="multipart/form-data">
+    <form class="container-sm col-md-6 mt-3"  action="{{route('user.update',$user)}}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 

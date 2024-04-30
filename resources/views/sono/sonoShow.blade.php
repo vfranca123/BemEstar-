@@ -4,7 +4,7 @@
 
     <h1 style="text-align: center; padding: 2%">Atividades Físicas</h1>
 
-    <div id="bigBox" style="width: 80%;margin-left:10%;Justify-content:flex-start;
+    <div  class="container-xxl mt-3 vh-100 bigBox" style="width: 80%;margin-left:10%;Justify-content:flex-start;
     align-items: center;flex-direction: column;">
         
         <div class="demarcacoes" >
