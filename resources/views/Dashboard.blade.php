@@ -1,7 +1,6 @@
 @extends('layout.layout')
 
 @section('content')
-
     @include('shared.flash ')
     @include('shared.flashError ')
 
@@ -16,49 +15,55 @@
     </div>
 
     <div class="container d-flex flex-column justify-content-center">
-        
-        <h1 class="align-self-center">Nossos serviçoes</h1>
-        
-        <div class="container-sm BlueBox m-4" >
-            <h1> Moderador de Sono</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur <br>
-                adipiscing elit. Consequat bibendum sit felis,<br> 
+
+        <h1 class="align-self-center">Nossos serviços</h1>
+
+        <div class="container-fluid BlueBox m-4 p-5 ">
+            <h1 class="m-2"> Moderador de Sono</h1>
+            <p class="fs-5 m-2">Lorem ipsum dolor sit amet, consectetur <br>
+                adipiscing elit. Consequat bibendum sit felis,<br>
                 sollicitudin et. Nulla aliquet integer hac ac <br>
                 morbi. <br></p>
-            
-            <a href="{{route('sonoInfo')}}">Saiba mais<i class="fa-solid fa-arrow-right"></i></a>
+
+            <a class="btn btn-primary m-2 col-md-2" href="{{ route('HumorInfo') }}">Saiba mais<i
+                    class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="container-sm BlueBox m-4">
-            <h1>Moderador de Atividades Físicas </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur <br>
-                adipiscing elit. Consequat bibendum sit felis,<br> 
+        <div class="container-sm BlueBox m-4 p-5 ">
+            <h1 class="m-2">Moderador de Atividades Físicas </h1>
+            <p class="fs-5 m-2">Lorem ipsum dolor sit amet, consectetur <br>
+                adipiscing elit. Consequat bibendum sit felis,<br>
                 sollicitudin et. Nulla aliquet integer hac ac <br>
                 morbi. <br></p>
-            
-            <a href="{{route('AtividadeFisicaInfo')}}">Saiba mais<i class="fa-solid fa-arrow-right"></i></a>
+
+
+            <a class="btn btn-primary m-2 col-md-2" href="{{ route('HumorInfo') }}">Saiba mais<i
+                    class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="container-sm BlueBox m-4">
-            <h1>Moderador de Humor </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur <br>
-                    adipiscing elit. Consequat bibendum sit felis,<br> 
-                    sollicitudin et. Nulla aliquet integer hac ac <br>
-                    morbi. <br></p>
-                <a href="{{route('HumorInfo')}}">Saiba mais<i class="fa-solid fa-arrow-right"></i></a>
-                
+        <div class="container-sm BlueBox m-4 p-5">
+            <h1 class="m-2">Moderador de Humor </h1>
+            <p class="fs-5 m-2">Lorem ipsum dolor sit amet, consectetur <br>
+                adipiscing elit. Consequat bibendum sit felis,<br>
+                sollicitudin et. Nulla aliquet integer hac ac <br>
+                morbi. <br></p>
+
+            <a class="btn btn-primary m-2 col-md-2" href="{{ route('HumorInfo') }}">Saiba mais<i
+                    class="fa-solid fa-arrow-right"></i></a>
+
         </div>
 
-        <div class="container-sm sobreNos" >
-            <div class="container-sm" style="max-width:60%;" id="boxWhite"> <h1 style="padding: 25%; padding-left:30%;color:#3f74ff">Sobre <br>Nos</h1></div>
-            <p >Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+        <div class="container-sm sobreNos">
+            <div class="container-sm" style="max-width:60%;" id="boxWhite">
+                <h1 style="padding: 25%; padding-left:30%;color:#3f74ff">Sobre <br>Nos</h1>
+            </div>
+            <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                 elit. Eget duis mi nunc bibendum. Tellus elementum <br>
-                SOBRE 
+                SOBRE
                 NÓS
-                 nec lorem eget dictumst. Risus in gravida eu, enim <br>
-                lorem. Sed consequat ut suspendisse eros. Nunc nunc <br> 
+                nec lorem eget dictumst. Risus in gravida eu, enim <br>
+                lorem. Sed consequat ut suspendisse eros. Nunc nunc <br>
                 accumsan, viverra enim. Mi. <br>
             </p>
         </div>
 
-        
     </div>
 @endsection
