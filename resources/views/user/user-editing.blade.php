@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-    
+    @include('layout.nav')
     <form class="container-sm col-md-6 mt-3"  action="{{route('user.update',$user)}}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')

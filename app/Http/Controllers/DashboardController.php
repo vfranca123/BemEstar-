@@ -10,10 +10,10 @@ class DashboardController extends Controller
 {
     public function index(){
      
-        return view('Dashboard',['controle'=>1]);
+        return view('Dashboard');
     }
     public function HomePage(){
-        return view('HomePage',['controle'=>2]);
+        return view('HomePage');
     }
 
     public function ModeradorDeSono(){

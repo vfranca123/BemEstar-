@@ -1,5 +1,6 @@
 @extends('layout.layout')
 @section('content')
+    @include('layout.nav')
     @include('shared.flash')
 
     <h1 class="text-center m-2">Alimentação</h1>

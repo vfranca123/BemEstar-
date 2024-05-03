@@ -1,6 +1,9 @@
 @extends('layout.layout')
 
 @section('content')
+
+    @include('layout.nav')
+
     <div class="container-sm BlueBox m-4 p-5">
         @if ($controle === 1)
             <h1 class="m-2">Moderador de Sono</h1>

@@ -1,6 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
+    @include('layout.nav')
     @include('shared.flash ')
     <div  class="container-sm col-md-6 mt-3">
         

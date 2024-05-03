@@ -18,10 +18,7 @@
 
 <body>
 
-    @include('layout.nav')
-
-
-    <div class="container-fluid ">
+    <div class="h-100 mw-100">
         @yield('content')
     </div>
 

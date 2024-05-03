@@ -1,5 +1,6 @@
 @extends('layout.layout')
 @section('content')
+    @include('layout.nav')
     @include('shared.flash ')
     @include('shared.flashError ')
 
